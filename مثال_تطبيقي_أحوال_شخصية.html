@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>مثال تطبيقي (أحوال شخصية) — تنازع القوانين</title>
+  <style>
+    :root{
+      --blue:#0b3b66;
+      --gray:#444444;
+      --muted:#6f7780;
+      --gold:#c9a738;
+      --card:#f6f7f9;
+      font-family: "Segoe UI", Tahoma, Arial, "Noto Naskh Arabic", sans-serif;
+    }
+    body{
+      margin:18px;
+      background:#fff;
+      color:var(--gray);
+      line-height:1.6;
+    }
+    .container{ max-width:980px; margin:0 auto; }
+    header{ border-bottom:4px solid rgba(11,59,102,0.06); padding-bottom:12px; margin-bottom:14px }
+    h1{ color:var(--blue); margin:0; font-size:26px }
+    .lead{ color:var(--muted); margin-top:6px }
+    .card{ background:var(--card); padding:14px; border-radius:8px; margin-bottom:14px; box-shadow:0 1px 6px rgba(11,59,102,0.04) }
+    h2{ color:var(--blue); margin-top:0 }
+    .section-title{ display:flex; align-items:center; gap:10px }
+    .pill{ background:var(--gold); color:#112; padding:6px 10px; border-radius:10px; font-weight:600; font-size:13px }
+    ol{ padding-inline-start:18px; margin:10px 0 }
+    table{ width:100%; border-collapse:collapse; margin-top:10px; font-size:14px }
+    th, td{ text-align:right; padding:10px; border-bottom:1px solid #e6e9ee }
+    th{ background:linear-gradient(90deg, rgba(11,59,102,0.95), rgba(11,59,102,0.85)); color:#fff; font-weight:600 }
+    .result{ background:#fff8e1; border-left:6px solid var(--gold); padding:10px; border-radius:6px; margin-top:12px }
+    .note{ color:var(--muted); font-size:13px; margin-top:8px }
+    .btn{
+      display:inline-block;
+      background:var(--blue);
+      color:#fff;
+      padding:10px 14px;
+      border-radius:8px;
+      text-decoration:none;
+      font-weight:600;
+      box-shadow:0 4px 12px rgba(11,59,102,0.08);
+    }
+    pre { background:#f3f6fb; padding:10px; border-radius:6px; overflow:auto; color:var(--blue) }
+    @media (max-width:720px){
+      h1{ font-size:20px }
+      th, td{ font-size:13px }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>مثال تطبيقي (أحوال شخصية)</h1>
+      <p class="lead">قضية: طلاق بين جزائري وامرأة فرنسية — تطبيق مواد القانون المدني الجزائري (9–24)</p>
+    </header>
+
+    <section class="card" id="facts">
+      <div class="section-title"><h2>الوقائع</h2><span class="pill">حالة عملية</span></div>
+      <p>جزائري تزوّج من فرنسية في جمهورية فرنسا. بعد الزواج انتقلا وأقما في الجزائر. رفع الزوج/أو الزوجة دعوى <strong>لفك الرابطة الزوجية (طلاق)</strong> أمام محكمة جزائرية.</p>
+      <p class="note">المسألة: ما القانون الواجب التطبيق على الطلاق؟ وما أثر مكان إبرام الزواج وجنسية الزوجين في هذا السياق؟</p>
+    </section>
+
+    <section class="card" id="qualification">
+      <h2>1. التكييف</h2>
+      <p>وفق المادة <strong>9</strong> من القانون المدني الجزائري، يخضع التكييف لقانون القاضي. القاضي الجزائري يقوم بتكييف النزاع ويصنّفه كقضية <strong>أحوال شخصية — طلاق</strong>.</p>
+      <p class="note">بالتالي: ننتقل لتطبيق قواعد الإسناد المتعلقة بالأحوال الشخصية الواردة في المواد اللاحقة.</p>
+    </section>
+
+    <section class="card" id="choice-of-law">
+      <h2>2. قواعد الإسناد ذات الصلة</h2>
+      <table aria-label="قواعد الإسناد">
+        <thead>
+          <tr><th>المادة</th><th>نص مختصر ذي صلة</th></tr>
+        </thead>
+        <tbody>
+          <tr><td style="width:90px">م12</td><td>الزواج: الشروط الموضوعية تخضع لقانون كل من الزوجين، الشكل يخضع لقانون مكان الإبرام.</td></tr>
+          <tr><td>م14</td><td>الطلاق والتفريق يخضعان لقانون جنسية الزوج وقت رفع الدعوى.</td></tr>
+          <tr><td>م9</td><td>التكييف يخضع لقانون القاضي (تم تطبيقه أعلاه).</td></tr>
+          <tr><td>م23 مكرر 1</td><td>إذا تقرر أن قانونًا أجنبيًا واجب التطبيق فلا تطبق منه قواعد تنازعه إلا إذا أحالت إلى القانون الجزائري.</td></tr>
+          <tr><td>م24</td><td>لا يطبّق القانون الأجنبي إذا كان مخالفًا للنظام العام أو الآداب العامة.</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="card" id="analysis">
+      <h2>3. التحليل القانوني وتطبيق المواد</h2>
+
+      <ol>
+        <li><strong>تحديد الضابط الأساسي:</strong> المادة <strong>14</strong> تحدد أن ضابط الإسناد بالنسبة للطلاق هو <em>جنسية الزوج وقت رفع الدعوى</em>.</li>
+
+        <li><strong>تعيين جنسية الزوج وقت رفع الدعوى:</strong> الزوج في هذه الحالة <strong>جزائري</strong> (كما ذكر في الوقائع).</li>
+
+        <li><strong>استنتاج القانون الواجب التطبيق:</strong> بمقتضى المادة <strong>14</strong> يكون القانون الواجب التطبيق على الطلاق هو <strong>القانون الجزائري</strong>.</li>
+
+        <li><strong>موقع إبرام الزواج (فرنسا):</strong> يُؤخذ في الاعتبار وفق المادة <strong>12</strong> بخصوص الشكل: إذا رُفع طعن حول صحة الشكل (شكل العقد)، تُفحص تطبيقًا لقانون مكان الإبرام (فرنسا). لكن هذه المسألة منفصلة عن قواعد الطلاق الموضوعية.</li>
+
+        <li><strong>فحص الإحالة:</strong> لأن القانون الواجب هنا وطني (الجزائري) فلا حاجة إلى إحالة (م23 مكرر 1) — الإحالة غير مطروحة عمليًا.</li>
+
+        <li><strong>فحص النظام العام:</strong> لا يظهر تعارض بين تطبيق القانون الجزائري وقيّم النظام العام الجزائري؛ لذا لا موانع لتطبيقه (م24).</li>
+      </ol>
+
+      <div class="result">
+        <strong>الحكم القانوني المنطقي:</strong>
+        <p>القاضي الجزائري يطبق القانون الجزائري على دعوى الطلاق استنادًا إلى المادة 14 من القانون المدني الجزائري لأن جنسية الزوج عند رفع الدعوى جزائرية. أما صحة شكليّة الزواج فتُقيم بحسب قانون مكان الإبرام (فرنسا) إن طُرح هذا الموضوع.</p>
+      </div>
+    </section>
+
+    <section class="card" id="method">
+      <h2>4. الحل المنهجي المختصر (خريطة خطوات التطبيق)</h2>
+      <ol>
+        <li>تكييف النزاع (م9): قضية طلاق — أحوال شخصية.</li>
+        <li>تحديد ضابط الإسناد (م14): جنسية الزوج وقت رفع الدعوى.</li>
+        <li>تحديد القانون الواجب التطبيق: القانون الجزائري (لأن الزوج جزائري عند رفع الدعوى).</li>
+        <li>فحص الشكل (م12 &amp; م23): شكل الزواج — قانون مكان الإبرام (فرنسا)؛ إن رُفع طعن في الشكل يُحال للفحص وفقًا له.</li>
+        <li>التحقق من وجود إحالة (م23 مكرر 1): لا توجد إحالة تنطبق هنا.</li>
+        <li>التحقق من النظام العام (م24): تطبيق القانون الجزائري مسموح.</li>
+        <li>إصدار الحكم وفق القانون الجزائري الخاص بالطلاق.</li>
+      </ol>
+    </section>
+
+    <section class="card" id="notes">
+      <h2>5. ملاحظات فقهية وتبويب نهائي</h2>
+      <p class="note">- هذا الحل يتوافق مع روح المواد 9–24 حيث يعطي المشرع الجزائري الأسبقية لقاعدة جنسية الزوج أثناء التقاضي في مسائل الطلاق. الفقه المقارن يناقش عدالة هذا التمييز، لكنه يبقى النص المطبق أمام المحكمة الجزائرية.</p>
+      <p class="note">- إن رأت الزوجة الطعن في صحة الزواج أو في شروط القبول (كالعمر أو الرضا)، يكون للقاضي الجزائري أن يتحقق من الشروط بمقتضى المادة 12 وبمراعاة قواعد الشكل (م23).</p>
+    </section>
+
+    <section class="card" id="conclusion">
+      <h2>النتيجة النهائية</h2>
+      <p>بناءً على تطبيق المواد <strong>9</strong> و<strong>12</strong> و<strong>14</strong> و<strong>23 مكرر 1</strong> و<strong>24</strong> من القانون المدني الجزائري: <strong>الطلاق يفصل بمقتضى القانون الجزائري</strong> أمام القضاء الجزائري في هذه الحالة. أما أي نقاش حول صحة شكل الزواج فينظر إليه وفقًا لقانون مكان الإبرام (فرنسا).</p>
+    </section>
+
+    <footer style="margin-top:14px; color:var(--muted); font-size:13px">
+      <p>ملاحظة: هذا تحليل تطبيقي تعليمي يهدف لشرح طريقة الحل وفق مواد البرنامج؛ للمرافعات القضائية الرسمية يُنصح بالرجوع إلى نصوص المواد كاملة والفقه القضائي ذي الصلة.</p>
+    </footer>
+  </div>
+</body>
+</html>
