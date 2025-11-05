@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>مثال تطبيقي (عقود دولية) — تنازع القوانين</title>
+  <style>
+    :root {
+      --blue: #0b3b66;
+      --gray: #444;
+      --muted: #6f7780;
+      --gold: #c9a738;
+      --card: #f6f7f9;
+      font-family: "Segoe UI", Tahoma, Arial, "Noto Naskh Arabic", sans-serif;
+    }
+    body {
+      margin: 18px;
+      background: #fff;
+      color: var(--gray);
+      line-height: 1.6;
+    }
+    .container {
+      max-width: 980px;
+      margin: 0 auto;
+    }
+    header {
+      border-bottom: 4px solid rgba(11,59,102,0.06);
+      padding-bottom: 12px;
+      margin-bottom: 14px;
+    }
+    h1 {
+      color: var(--blue);
+      margin: 0;
+      font-size: 26px;
+    }
+    .lead {
+      color: var(--muted);
+      margin-top: 6px;
+    }
+    .card {
+      background: var(--card);
+      padding: 14px;
+      border-radius: 8px;
+      margin-bottom: 14px;
+      box-shadow: 0 1px 6px rgba(11,59,102,0.04);
+    }
+    h2 {
+      color: var(--blue);
+      margin-top: 0;
+    }
+    .pill {
+      background: var(--gold);
+      color: #112;
+      padding: 6px 10px;
+      border-radius: 10px;
+      font-weight: 600;
+      font-size: 13px;
+      display: inline-block;
+      margin-left: 8px;
+    }
+    ol { padding-inline-start: 18px; margin: 10px 0; }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+      font-size: 14px;
+    }
+    th, td {
+      text-align: right;
+      padding: 10px;
+      border-bottom: 1px solid #e6e9ee;
+    }
+    th {
+      background: linear-gradient(90deg, rgba(11,59,102,0.95), rgba(11,59,102,0.85));
+      color: #fff;
+      font-weight: 600;
+    }
+    .result {
+      background: #fff8e1;
+      border-left: 6px solid var(--gold);
+      padding: 10px;
+      border-radius: 6px;
+      margin-top: 12px;
+    }
+    .note {
+      color: var(--muted);
+      font-size: 13px;
+      margin-top: 8px;
+    }
+    .btn {
+      display: inline-block;
+      background: var(--blue);
+      color: #fff;
+      padding: 10px 14px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+      box-shadow: 0 4px 12px rgba(11,59,102,0.08);
+    }
+    pre {
+      background: #f3f6fb;
+      padding: 10px;
+      border-radius: 6px;
+      overflow: auto;
+      color: var(--blue);
+    }
+    footer {
+      margin-top: 14px;
+      color: var(--muted);
+      font-size: 13px;
+      text-align: center;
+    }
+    @media (max-width:720px) {
+      h1 { font-size: 20px; }
+      th, td { font-size: 13px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>مثال تطبيقي (عقود دولية)</h1>
+      <p class="lead">قضية: عقد دولي بين شركة جزائرية وشركة فرنسية — تطبيق المواد 20 و21 من القانون المدني الجزائري</p>
+    </header>
+
+    <section class="card" id="facts">
+      <h2>الوقائع <span class="pill">حالة عملية</span></h2>
+      <p>
+        أبرمت شركة جزائرية اتفاقية توريد مع شركة فرنسية في مدينة باريس، دون أن تتضمن العقد شرطًا يحدد القانون الواجب التطبيق. 
+        بعد فترة، نشأ نزاع حول تنفيذ العقد، فرفعت الشركة الجزائرية الدعوى أمام محكمة جزائرية للمطالبة بالتعويض.
+      </p>
+      <p class="note">المسألة: ما هو القانون الواجب التطبيق على العقد؟ وهل يطبّق القاضي الجزائري القانون الجزائري أم الفرنسي؟</p>
+    </section>
+
+    <section class="card" id="qualification">
+      <h2>1. التكييف القانوني</h2>
+      <p>
+        طبقًا للمادة <strong>9</strong> من القانون المدني الجزائري، التكييف يخضع لقانون القاضي. 
+        القاضي الجزائري يكيف المسألة على أنها <strong>التزامات تعاقدية ذات عنصر أجنبي</strong> (عقد دولي بين طرفين من جنسيات مختلفة).
+      </p>
+    </section>
+
+    <section class="card" id="rules">
+      <h2>2. القواعد القانونية ذات الصلة</h2>
+      <table>
+        <thead>
+          <tr><th>المادة</th><th>النص الموجز</th><th>الضابط</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>20</td><td>العقود تخضع لقانون الإرادة، أو لقانون مكان إبرامها عند عدم وجود اتفاق.</td><td>إرادة الأطراف / مكان الإبرام</td></tr>
+          <tr><td>21</td><td>الأفعال التقصيرية تخضع لقانون مكان وقوع الفعل.</td><td></td></tr>
+          <tr><td>23 مكرر 1</td><td>الإحالة مقبولة إذا أحالت إلى القانون الجزائري.</td><td>الإحالة من الدرجة الأولى</td></tr>
+          <tr><td>24</td><td>استبعاد القانون الأجنبي المخالف للنظام العام.</td><td>النظام العام</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="card" id="analysis">
+      <h2>3. التحليل وتطبيق المواد</h2>
+      <ol>
+        <li><strong>غياب شرط اختيار القانون:</strong> بما أن العقد لم يتضمن شرطًا يحدد القانون الواجب التطبيق، نرجع مباشرة للمادة <strong>20</strong>.</li>
+        <li><strong>مكان الإبرام:</strong> تم في باريس، أي على إقليم فرنسي.</li>
+        <li><strong>تطبيق المادة 20:</strong> عند غياب إرادة الأطراف، يُطبّق قانون مكان الإبرام → <strong>القانون الفرنسي</strong>.</li>
+        <li><strong>موقع التنفيذ:</strong> رغم أن التنفيذ في الجزائر، فإن الأصل في المادة 20 يعتمد على مكان الإبرام ما لم يثبت اتفاق صريح.</li>
+        <li><strong>فحص الإحالة (م23 مكرر 1):</strong> لو أحال القانون الفرنسي النزاع إلى القانون الجزائري (إحالة من الدرجة الأولى)، يمكن للقاضي قبولها.</li>
+        <li><strong>فحص النظام العام (م24):</strong> إذا تضمنت القواعد الفرنسية ما يخالف النظام العام الجزائري، تُستبعد في حدود التعارض.</li>
+      </ol>
+
+      <div class="result">
+        <strong>النتيجة القانونية:</strong>
+        <p>
+          يطبّق القاضي الجزائري القانون الفرنسي على العقد استنادًا إلى المادة 20، لأنه أُبرم في فرنسا ولم يتضمن شرط اختيار القانون. 
+          ومع ذلك، يحتفظ القاضي بسلطته في استبعاد أي حكم فرنسي يخالف النظام العام الجزائري طبقًا للمادة 24.
+        </p>
+      </div>
+    </section>
+
+    <section class="card" id="method">
+      <h2>4. الخطوات المنهجية</h2>
+      <ol>
+        <li>تحديد طبيعة العلاقة (عقد دولي) → تكييف وفق المادة 9.</li>
+        <li>التحقق من وجود شرط اختيار القانون → غير موجود.</li>
+        <li>تطبيق المادة 20 → قانون مكان الإبرام (فرنسا).</li>
+        <li>فحص الإحالة المحتملة (م23 مكرر 1).</li>
+        <li>التحقق من النظام العام (م24).</li>
+        <li>إصدار الحكم وفق القانون الفرنسي مع مراعاة النظام العام الجزائري.</li>
+      </ol>
+    </section>
+
+    <section class="card" id="conclusion">
+      <h2>5. الخلاصة</h2>
+      <p>
+        في حالة العقد الدولي المبرم بين شركة جزائرية وأخرى فرنسية في باريس، دون تحديد القانون الواجب التطبيق، 
+        يطبّق القاضي الجزائري <strong>القانون الفرنسي</strong> باعتباره قانون مكان الإبرام (م20 مدني). 
+        ويُستبعد أي حكم مخالف للنظام العام الجزائري (م24).
+      </p>
+    </section>
+
+    <footer>
+      <p>© 2025 - صفحة تعليمية في القانون الدولي الخاص - أمثلة تطبيقية حول تنازع القوانين (العقود الدولية).</p>
+    </footer>
+  </div>
+</body>
+</html>
