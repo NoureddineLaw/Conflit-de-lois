@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>القانون الدولي الخاص — تنازع القوانين</title>
+  <style>
+    :root {
+      --blue:#0b3b66;
+      --gray:#444;
+      --muted:#6f7780;
+      --gold:#c9a738;
+      --card:#f6f7f9;
+      font-family:"Segoe UI", Tahoma, Arial, "Noto Naskh Arabic", sans-serif;
+    }
+    body{margin:0;background:#fff;color:var(--gray);line-height:1.7;scroll-behavior:smooth;}
+    header{background:var(--blue);color:#fff;text-align:center;padding:26px 12px;}
+    header h1{margin:0;font-size:28px;}
+    header p{margin:4px 0 0 0;font-size:16px;color:#d9e4f2;}
+    nav{background:#e9edf5;padding:10px;text-align:center;border-bottom:2px solid rgba(11,59,102,0.1);}
+    nav a.btn{display:inline-block;background:var(--blue);color:#fff;padding:10px 16px;border-radius:8px;text-decoration:none;font-weight:600;margin:6px;transition:background 0.2s ease;}
+    nav a.btn:hover{background:#124b8a;}
+    .container{max-width:980px;margin:18px auto;padding:0 14px;}
+    section.card{background:var(--card);padding:14px 18px;border-radius:8px;margin-bottom:18px;box-shadow:0 1px 6px rgba(11,59,102,0.05);}
+    h2{color:var(--blue);margin-top:0;}
+    table{width:100%;border-collapse:collapse;margin-top:10px;font-size:14px;}
+    th,td{text-align:right;padding:10px;border-bottom:1px solid #e6e9ee;}
+    th{background:linear-gradient(90deg,rgba(11,59,102,0.95),rgba(11,59,102,0.85));color:#fff;font-weight:600;}
+    .svg-wrap{display:flex;justify-content:center;align-items:center;background:#fff;border-radius:8px;padding:16px;box-shadow:0 6px 18px rgba(11,59,102,0.06);margin-top:10px;}
+    footer{text-align:center;padding:16px;background:#f4f6f8;color:var(--muted);font-size:13px;}
+    /* قسم الأمثلة */
+    .examples-grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+      gap:16px;
+      margin-top:14px;
+    }
+    .example-card{
+      background:#fff;
+      border-radius:10px;
+      box-shadow:0 4px 12px rgba(11,59,102,0.08);
+      padding:14px;
+      transition:transform 0.5s ease, box-shadow 0.5s ease, opacity 0.6s ease;
+      opacity:0;
+      transform:translateY(40px);
+    }
+    .example-card.visible{
+      opacity:1;
+      transform:translateY(0);
+    }
+    .example-card:hover{
+      transform:translateY(-4px);
+      box-shadow:0 8px 18px rgba(11,59,102,0.12);
+    }
+    .example-card h3{color:var(--blue);margin-top:0;}
+    .example-card p{color:var(--muted);font-size:14px;}
+    .example-card a{
+      display:inline-block;
+      margin-top:8px;
+      background:var(--blue);
+      color:#fff;
+      text-decoration:none;
+      padding:8px 12px;
+      border-radius:8px;
+      font-weight:600;
+    }
+    .example-card a:hover{background:#124b8a;}
+    /* تأثير الظهور للأقسام */
+    .fade-section{
+      opacity:0;
+      transform:translateY(40px);
+      transition:all 0.8s ease;
+    }
+    .fade-section.visible{
+      opacity:1;
+      transform:translateY(0);
+    }
+    /* زر العودة للأعلى */
+    #topBtn {
+      display:none;
+      position:fixed;
+      bottom:28px;
+      left:28px;
+      z-index:99;
+      background:linear-gradient(90deg,var(--blue),var(--gold));
+      color:#fff;
+      font-weight:700;
+      border:none;
+      border-radius:50%;
+      width:46px;
+      height:46px;
+      cursor:pointer;
+      box-shadow:0 4px 12px rgba(11,59,102,0.25);
+      transition:transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    #topBtn:hover{
+      transform:translateY(-3px);
+      box-shadow:0 6px 16px rgba(11,59,102,0.35);
+    }
+    @media(max-width:700px){header h1{font-size:22px;}table{font-size:13px;}}
+  </style>
+</head>
+<body>
+  <header>
+    <h1>تحليل المواد 9–24 من القانون المدني الجزائري</h1>
+    <p>تنازع القوانين والعلاقات القانونية ذات العنصر الأجنبي</p>
+  </header>
+
+  <nav>
+    <a class="btn" href="#analysis">تحليل المواد</a>
+    <a class="btn" href="#rules">قواعد الإسناد</a>
+    <a class="btn" href="#mindmap">الخريطة الذهنية</a>
+  </nav>
+
+  <div class="container">
+    <section class="card fade-section" id="intro">
+      <h2>مقدمة</h2>
+      <p>يهدف هذا العمل إلى تحليل المواد (9–24) من القانون المدني الجزائري التي تنظّم <strong>تنازع القوانين</strong> وتحدد القواعد التي يتّبعها القاضي عند وجود عنصر أجنبي في العلاقة القانونية. تم تضمين القواعد الأساسية وخريطة ذهنية لتبسيط طريقة حل المسائل.</p>
+    </section>
+
+    <section class="card fade-section" id="analysis">
+      <h2>تحليل موجز للمواد (9–24)</h2>
+      <table>
+        <thead><tr><th>المادة</th><th>المضمون القانوني</th><th>الضابط</th></tr></thead>
+        <tbody>
+          <tr><td>9</td><td>التكييف يخضع لقانون القاضي.</td><td>قانون القاضي</td></tr>
+          <tr><td>10</td><td>الأهلية والحالة المدنية حسب قانون الجنسية.</td><td>الجنسية</td></tr>
+          <tr><td>12</td><td>شروط الزواج الموضوعية لكل جنسية، والشكل حسب مكان الإبرام.</td><td>جنسية الطرفين / المكان</td></tr>
+          <tr><td>14</td><td>الطلاق يخضع لقانون جنسية الزوج وقت رفع الدعوى.</td><td>جنسية الزوج</td></tr>
+          <tr><td>20</td><td>العقود حسب إرادة الأطراف أو مكان الإبرام.</td><td>الإرادة / المكان</td></tr>
+          <tr><td>21</td><td>الأفعال التقصيرية حسب مكان وقوع الفعل.</td><td>Lex Loci Delicti</td></tr>
+          <tr><td>22</td><td>الأموال حسب موقعها.</td><td>Lex Rei Sitae</td></tr>
+          <tr><td>23 مكرر 1</td><td>الإحالة مقبولة إذا أحالت إلى القانون الجزائري.</td><td>إحالة من الدرجة الأولى</td></tr>
+          <tr><td>24</td><td>استبعاد القانون الأجنبي المخالف للنظام العام.</td><td>النظام العام</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="card fade-section" id="rules">
+      <h2>قواعد الإسناد الأساسية</h2>
+      <ul>
+        <li>الأحوال الشخصية → قانون الجنسية (م10–18)</li>
+        <li>الزواج → الموضوع (جنسية الطرفين) / الشكل (مكان الإبرام)</li>
+        <li>العقود → قانون الإرادة أو مكان الإبرام</li>
+        <li>التقصير → مكان وقوع الفعل (م21)</li>
+        <li>الأموال → قانون موقع المال (م22)</li>
+        <li>الإحالة → مقبولة من الدرجة الأولى فقط (م23 مكرر 1)</li>
+        <li>النظام العام → استبعاد القانون الأجنبي المخالف (م24)</li>
+      </ul>
+    </section>
+
+    <section class="card fade-section" id="mindmap">
+      <h2>الخريطة الذهنية لحل قضايا تنازع القوانين</h2>
+      <div class="svg-wrap">
+        <img src="A_flowchart_in_digital_vector_graphic_format_illus.png" alt="الخريطة الذهنية لحل قضايا تنازع القوانين" width="100%">
+      </div>
+    </section>
+
+    <!-- قسم الأمثلة -->
+    <section class="card fade-section" id="examples">
+      <h2>🎓 الأمثلة التطبيقية — دراسات حالة في تنازع القوانين</h2>
+      <div class="examples-grid">
+        <div class="example-card">
+          <h3>مثال تطبيقي (أحوال شخصية)</h3>
+          <p>زواج مختلط بين جزائري وفرنسية أُبرم في فرنسا، ونُظر في الطلاق أمام القضاء الجزائري.</p>
+          <a href="مثال_تطبيقي_أحوال_شخصية.html">عرض المثال</a>
+        </div>
+        <div class="example-card">
+          <h3>مثال تطبيقي (عقود دولية)</h3>
+          <p>عقد توريد بين شركة جزائرية وفرنسية أُبرم في باريس دون اختيار القانون الواجب التطبيق.</p>
+          <a href="مثال_تطبيقي_عقود_دولية.html">عرض المثال</a>
+        </div>
+        <div class="example-card">
+          <h3>مثال تطبيقي (الميراث الدولي)</h3>
+          <p>وفاة شخص فرنسي في الجزائر تاركًا عقارًا فيها وأموالًا في فرنسا — تحديد القانون المطبق على الميراث.</p>
+          <a href="مثال_تطبيقي_ميراث_دولي.html">عرض المثال</a>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>© 2025 - صفحة تعليمية في مقياس القانون الدولي الخاص - كلية الحقوق</p>
+    </footer>
+  </div>
+
+  <!-- زر العودة للأعلى -->
+  <button onclick="topFunction()" id="topBtn" title="العودة للأعلى">↑</button>
+
+  <script>
+    // زر العودة للأعلى
+    const topBtn=document.getElementById("topBtn");
+    window.onscroll=function(){
+      if(document.body.scrollTop>300||document.documentElement.scrollTop>300){
+        topBtn.style.display="block";
+      }else{topBtn.style.display="none";}
+    };
+    function topFunction(){window.scrollTo({top:0,behavior:'smooth'});}
+
+    // تأثير الظهور للأقسام والبطاقات
+    const observer=new IntersectionObserver((entries)=>{
+      entries.forEach(entry=>{
+        if(entry.isIntersecting){
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    },{threshold:0.2});
+
+    document.querySelectorAll('.fade-section, .example-card').forEach(el=>observer.observe(el));
+  </script>
+</body>
+</html>
